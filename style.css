@@ -1,0 +1,157 @@
+*::before,
+*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h2{
+  font-size: 16px;
+}
+li{
+  list-style: none;
+  font-size: 28px;
+  font-weight: 500;
+}
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.content__card__img {
+width: 140px;
+height: 140px;
+  border-radius: 50%;
+}
+
+.content__card_text{
+
+}
+
+
+
+.navigation__title{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: red;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+background-color: rgb(209, 208, 208);
+}
+
+.contenedor{
+  width: 1200px;
+  
+
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+.content__card{
+  border: 2px solid  rgb(209, 208, 208);
+  width: 300px;
+  height: 380px;
+  /*width: auto;
+  height: auto;*/
+}
+.content__card_text{
+  padding: 10px;
+  text-align: center;
+}
+.content__card__icon{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 10px;
+
+}
+.content__card:hover{
+  box-shadow: 2px 3px 12px 2px gray;
+ 
+}
+.ocultar{
+  display: none;
+}
+.content__card:hover .ocultar{
+  display: block;
+}
+
+.container__modal{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(184, 181, 181, 0.808);
+  display: none;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+
+}
+.btn__modal:checked ~ .container__modal{
+  display: block;
+}
+
+.content__modal{
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+
+  
+}
+
+.container__modal .btn__cerrar button{
+  padding: 7px 10px;
+  background-color: #5488a3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  border: none;
+}
+.container__modal .btn__cerrar button:hover{
+  background-color: #1c597a;
+}
+
+.cerrar__modal{
+  width: 100%;
+  height: 100hv;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container__modal .btn__cerrar{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.cerrar-modal{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
